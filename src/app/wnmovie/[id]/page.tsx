@@ -56,13 +56,13 @@ async function DetailMovie({ params }: { params: { id: string } }) {
             <p>
               {movie.production_countries
                 .map((production: Production) => production.name)
-                .join("")}
+                .join(", ")}
             </p>
             <h3 className="mt-5 text-xl font-bold">Language</h3>
             <p>
               {movie.spoken_languages
                 .map((language: Language) => language.name)
-                .join("")}
+                .join(", ")}
             </p>
             <h3 className="mt-5 text-xl font-bold">Genres</h3>
             <p>{movie.genres.map((genre: Genre) => genre.name).join(", ")}</p>
