@@ -12,7 +12,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
-function formLogin2() {
+function Page() {
   const router = useRouter();
   const [userLogin, setUserLogin] = useState({
     email: "",
@@ -73,4 +73,4 @@ function formLogin2() {
   );
 }
 
-export default formLogin2;
+export default Page;
